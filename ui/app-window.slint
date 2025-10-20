@@ -1,8 +1,14 @@
 import { StandardButton } from "std-widgets.slint";
 
 export component AppWindow inherits Window {
+  in property <image> imageTest;
+
   Text {
     horizontal-alignment: center;
     text: "Hello world";
+  }
+
+  Image {
+    source: root.imageTest;
   }
 }
